@@ -12,13 +12,9 @@
 --
 主要包含以下页面：
 
-首页 index.html：图片轮播展示一周最佳美景、旅游达人所见所拍等
-
-景廊页 Gallery.html： 利用缩放动画美腻的展示了高清美景
-
-感悟页 Testimonials.html：一条条地分享了最火热的旅游感悟
-
-注册页 reg.html：用正则表达式进行注册信息验证
-
-关于页 readme.html：自定义关于页
+1. 首页 index.html：图片轮播展示一周最佳美景、旅游达人所见所拍等
+2. 景廊页 Gallery.html： 利用缩放动画美腻的展示了高清美景
+3. 感悟页 Testimonials.html：一条条地分享了最火热的旅游感悟
+4. 注册页 reg.html：用正则表达式进行注册信息验证
+5. 关于页 readme.html：自定义关于页
 
