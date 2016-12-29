@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+	div, ul{
+		margin: 0;
+		padding: 0;
+	}
+	:visited {
+		outline-style: none;
+	}
+	body{
+		margin-left:0px;
+		margin-right:0px;
+		margin-top:0px;
+		margin-bottom:0px;
+
+	}
+
+	.list{
+		margin-left:auto;
+		margin-right:auto;
+		height:50px;
+		background-image:url(../images/bar.jpg);
+		background-repeat:repeat-x;
+		border-bottom:#C0DCC0 ridge 1px;
+	}
+	
+	.title{
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+		height:80px;
+	}
+	
+	.samllimg{
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+		height:600px;
+	}
+	
+	.aboutus{
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+		height:300px;
+		margin-top:70px;
+	}
+	
+	.bottom{
+		margin-left:auto;
+		margin-right:auto;
+		height:50px;
+		background:#CCC;
+	}
+	
+	
+	a{
+		text-decoration:none;
+	}
+	
+	/*-------------------listmenu-------------------*/
+	.listmenu{
+		margin-left:auto;
+		margin-right:auto;
+		width:960px;	
+	}
+	.nav{
+		height:50px;
+		background:url(../images/bar.jpg);
+		float:left;
+		width:765px;
+		
+		
+	}
+	
+	a{
+		font-weight:600;
+	}
+	.nav-item{
+		position:relative;
+		float:left;
+		width:120px;
+		line-height:50px;
+		text-align:center;
+		font-size:15px;
+		z-index:1;
+	}
+	.nav-item a{
+		display:inline;
+		height:50px;
+		color:#000;
+		font-size:20px;
+		font-family:"Times New Roman", Times, serif;
+	}
+	.nav-item a:hover{
+		color:#FFF;
+	}
+	.move-bg{
+		display:none;
+		position:relative;
+		left:0;
+		top:0px;
+		width:120px;
+		height:50px;
+		background:url(../images/tBG.jpg);
+		z-index:0;
+	}
+	
+	li{
+		list-style:none;
+	}
+	
+	
+	.listbtn{
+		padding-top:12px;
+	
+	}
+
+	/*------------------title--------------------*/
+	.logoimg{
+		margin: 1em 0;
+		display:inline;
+	}
+	
+	.serchimg{
+		position:absolute;
+		margin-left:630px;
+		margin-top:22px;
+
+	}
+	
+	.serchtxt{
+		position:absolute;
+		margin-left:430px;
+		margin-top:25px;
+		
+		vertical-align:middle;
+		line-height:25px;
+		
+		font:"Times New Roman", Times, serif;
+		font-size:15px;
+		border:#000000 solid 1px;
+		border-radius:3px;
+	}
+	.serchtxt:hover{
+		border:#00DF00 solid 1px;
+	}
+	
+	
+	/*----------------btn-----------------------*/
+	.bottoms{
+		margin-top:80px;
+		text-align:center;
+		font:"Times New Roman", Times, serif;
+		font-size:20px;
+		padding-top:15px;
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	
+	.listbtn:hover{
+		
+	}
+	button{
+		background:none;
+		font-size:30px;
+		
+	}
+	
+	.topbtn{
+		background:none;
+		font-size:18px;
+		background-color: transparent;
+		border:#000000 solid 1px;
+	}
+	.topbtn:hover{
+		border:#00BF00 solid 1px;
+	}
+	
+	/*----------------back---------------------*/
+	.back{
+		width:960px;
+		height:40px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:20px;
+		background:url(../images/bar.jpg);
+		font:"Times New Roman", Times, serif;
+		font-size:20px;
+	
+	}
+	
+	.backs{
+		padding-top:10px;
+		padding-left:10px;
+		color:#007F00;
+		font-weight:bold;
+		
+		
+	}
+	
+	.backa{
+		color:#009F00;
+		font-weight:300;
+	}
+	
+	.backa:hover{
+		color:#F00;
+	}
+	
+	
+	/*----------------bar---------------------*/
+	.bar{
+		width:960px;
+		height:80px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:60px;
+		margin-bottom:-30px;
+		text-align:center;
+		font-family:"楷体","楷体_GB2312";
+		color:#2A7F00;
+		font-size:40px;
+		
+	}
+	
+	.barhr{
+		width:200px;
+		height:2px;
+		background-color:#2ABF00;
+		
+	}
+	
+
+

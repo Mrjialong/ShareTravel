@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>驴友足迹</title>
+<link href="css/share.css" rel="stylesheet" type="text/css" />
+<link href="css/indexsmallimg.css" rel="stylesheet" type="text/css" />
+<script src="javascript/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="javascript/indexBigImg.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/jquery.movebg.js"></script>
+
+<script type="text/javascript">
+	/*-----------------图片悬浮提示----------------------------*/
+	$(document).ready(function(){
+		$('.listimg').hover(function(){
+			$(".summary",this).stop().animate({top:'110px'},{queue:false,duration:180});
+		},function(){
+			$(".summary",this).stop().animate({top:'165px'},{queue:false,duration:180});
+		});
+	});
+	
+	/*-----------------导航栏移动快----------------------------*/
+	$(function(){
+		$(".nav").movebg({
+			width:120/*滑块的大小*/,
+			extra:40/*额外反弹的距离*/,
+			speed:300/*滑块移动的速度*/,
+			rebound_speed:400/*滑块反弹的速度*/
+		});
+	})
+	
+	/*-----------------读xml----------------------------*/
+	var xmlDoc= new ActiveXObject("Microsoft.XMLDOM");  
+	xmlDoc.async=true;
+	xmlDoc.load("xml/information.xml");
+	clients=xmlDoc.getElementsByTagName("客户");
+	items=clients[0].childNodes;
+	var a=items[4].nodeName+"\t";
+	var b=clients[0].childNodes[4].childNodes[0].nodeValue;
+	alert(a+b);
+</script>
+
+<style type="text/css">
+	/*-------------bigimg-----------------------*/
+	.d1{
+		height:700px;
+		overflow:hidden;
+		position:relative;
+		margin-right:auto;
+		margin-left:auto;	
+	}
+
+	.bigimglist{
+		display:none;	
+	}
+	.loading{
+		text-align:center;
+		font-size:20px;
+		color:#009F00;
+	}
+
+	.b1,.b2{
+		background-color:#666666;
+		display:block;
+		float:left;
+		padding:2px 6px;
+		margin-right:5px;
+		color:#FFFFFF;
+		cursor:pointer;
+	}
+	.b2{
+		background-color:#007F00;
+		
+	}
+	.d1{
+		height:auto;
+		overflow:hidden;
+	}
+	
+	.button{
+		position:absolute; 
+		z-index:1000; 
+		right:5px; 
+		bottom:5px; 
+		font-size:13px; 
+		font-weight:bold;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	
+	/*-------------s-----------------------*/
+	.s1{
+		text-align:center;
+		font-family:"楷体","楷体_GB2312";
+		font-size:32px;
+		color:#2A5F00;
+		font-weight:bold;
+	}
+	.daohang{
+		width:960px;
+		margin-left:auto;
+		margin-right:auto;
+		font:"Times New Roman", Times, serif;
+		font-weight:bold;
+		font-size:22px;
+		color:#2A9F00;
+		margin-bottom:-30px;
+	}
+	
+	/*-------------peopleul-----------------------*/
+	.cimg{
+		border:#C0DCC0 solid 2px;
+		border-radius:120px;
+		width:250px;
+		height:250px;
+	}
+	.peopleli{
+		padding-left:130px;
+		display:inline;
+	}
+	.cimg:hover{
+		border:#00BF00 4px outset;
+	}
+
+</style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="listmenu"> 
+         	<div class="nav">
+                <ul>
+                    <li class="nav-item cur"><a href="#">首页</a></li>
+                    <li class="nav-item"><a href="Gallery.html">景廊</a></li>
+                    <li class="nav-item"><a href="Testimonials.html">感悟</a></li>
+                    <li class="nav-item"><a href="https://www.baidu.com/">论坛</a></li> 
+                    <li class="nav-item"><a href="readme.html">关于我</a></li>
+                </ul>
+                <!--移动的滑动-->
+                <div class="move-bg"></div>
+                <!--移动的滑动 end-->
+        	</div>
+            
+            <div class="listbtn">
+  				<a href="reg.html"><input class="topbtn" type="button" value="注册" onclick="" /></a>
+  				<input class="topbtn" type="button" value="登录" onclick="" />
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <div class="title">
+    	<img class="logoimg" src="images/logo.png"/>
+        <input class="serchtxt" class="text" type="text" value="搜索..." />
+        <img class="serchimg" src="images/e.png" />
+    </div>
+    
+    
+    <div class="bigimg">
+  		 <div id="bg" >
+    		<div class="loading">加载图片中，请稍后...<br /></div>
+          	<ul class="bigimglist">
+            <li><img src="images/b1.jpg" width="100%" height="700px"/></li>
+            <li><img src="images/b2.jpg"  width="100%"height="700px"  /></li>
+            <li><img src="images/b3.jpg" width="100%" height="700px"  /></li>
+            <li><img src="images/b4.jpg"  width="100%"height="700px"  /></li>
+
+           	</ul>
+    	</div>
+   	
+    </div>
+    
+    
+    <pre class="s1">走别人没走过的路           </pre>
+    <pre class="s1">		   看别人没看过的景...</pre>
+    
+    
+  
+    <div class="daohang"> >> 爱生活 爱旅行 爱分享</div>
+    
+    <div class="smallimg">
+        <ul class="smallul">
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/1.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>拿破仑曾说：will never say ‘Impossible’</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">阿尔卑斯山脚庄园</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">769</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+            
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/2.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>魂牵梦绕这里的，不只有神仙。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">张家界如画的山脉</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">537</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+            
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/3.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>震撼！母亲黄河的心脏</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">壶口瀑布磅礴之气</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">605</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+  			
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/4.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>晴乌镇不如雨乌镇，雨乌镇不如夜乌镇。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">美在乌镇</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">4729</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+            
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/5.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>世界之巅 8844米</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">珠穆朗玛</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">1430</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+            <li class="listbox">
+                <div class="listimg">
+                    <a href="/"><img  src='images/6.jpg' c /></a>
+                    <div class="summary">
+                        <div class="summarytxt">
+                            <p>天海合一见证爱的永恒</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="listinfo">
+                    <div class="listtitle"><a href="#">婚旅圣地--巴厘岛</a></div>
+                    <div class="listtag">
+                        <a href="#" rel="tag">郭峰</a>
+                    </div>
+                    <div class="listdate">2016-06-22</div>
+                    <div class="listview">980</div>
+                    <div class="listcomment">16</div>
+                </div>    
+            </li>
+        </ul>
+    </div>
+ 
+ 
+    <div class="daohang"> >> 资深驴友 带你领略醉美的景</div>
+    <div class="aboutus">
+   		<ul class="peopleul">
+            <li class="peopleli"><a href="#"><img class="cimg" src="images/c1.jpg" ></a></li>
+            <li class="peopleli"><a href="#"><img class="cimg" src="images/c2.jpg" ></a></li>
+    	</ul>
+    </div>
+    
+  
+    
+   <div class="bottom">
+    	<div class="bottoms">邮箱：<a href="mailto:guofeng2017@163.com" >驴友足迹</a> © 2016 Class:软工5班 Name:郭峰 ID:20142203788 Phone:15762796681 </div>
+    </div>
+    
+</body>
+</html>

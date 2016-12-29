@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>关于我</title>
+<link rel="stylesheet" type="text/css" href="css/share.css" />
+<script type="text/javascript" src="javascript/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.movebg.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".nav").movebg({
+			width:120/*滑块的大小*/,
+			extra:40/*额外反弹的距离*/,
+			speed:300/*滑块移动的速度*/,
+			rebound_speed:400/*滑块反弹的速度*/
+		});
+	})
+
+</script>
+
+<style type="text/css">
+	/*----------------readme---------------------*/
+	.readme{
+		height:600px;
+		width:960px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:80px;
+		margin-top:80px;
+		background:url(images/tBG.jpg);
+		border-radius:5px;
+
+	}
+	.readme div{
+		padding:30px;
+		font-size:25px;
+		font:"Times New Roman", Times, serif;
+	}
+
+</style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="listmenu"> 
+         	<div class="nav">
+                <ul>
+                    <li class="nav-item"><a href="index.html">首页</a></li>
+                    <li class="nav-item"><a href="Gallery.html">景廊</a></li>
+                    <li class="nav-item"><a href="Testimonials.html">感悟</a></li>
+                    <li class="nav-item"><a href="https://www.baidu.com/">论坛</a></li> 
+                    <li class="nav-item  cur"><a href="#">关于我</a></li>
+                </ul>
+                <!--移动的滑动-->
+                <div class="move-bg"></div>
+                <!--移动的滑动 end-->
+        	</div>
+            
+            <div class="listbtn">
+  				<a href="reg.html"><input class="topbtn" type="button" value="注册" onclick="" /></a>
+  				<input class="topbtn" type="button" value="登录" onclick="" />
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <div class="title">
+    	<img class="logoimg" src="images/logo.png"/>
+        <input class="serchtxt" class="text" type="text" value="搜索..." />
+        <img class="serchimg" src="images/e.png" />
+    </div>
+    
+    
+    <div class="back">
+    	<div class="backs">
+        	<a class="backa" href="index.html">首页</a> / 关于我的设计思想
+        </div>
+    </div>
+    
+    <div class="bar">设计思想</div>
+ 
+    <hr class="barhr"/>
+    
+    
+    
+    
+    <div class="readme">
+    	<div>
+            <p>驴友足迹 是一个分享旅游时所见所闻所感为主题的网站。</p>
+            <p>网站主要包含以下页面：首页index.html、景廊Gallery.html、感悟Testimonials.html、注册reg.html 和 本页面 </p>
+            <p>首页:主要展示了一周最佳美景、旅游达人所见所拍的景色集等</p>
+            <p>景廊:展示了大量的旅途所拍摄的高清美景</p>
+            <P>感悟:按条分享了最火热的旅游感悟</P>
+            <P>注册:用JavaScriot进行注册信息验证</P>
+            <p>主要采用了HTML、DIV+CSS、JavaScript、Jquery、XML技术</p>
+        </div>
+    </div>
+    
+  
+    
+  
+    <div class="bottom">
+    	<div class="bottoms">邮箱：<a href="mailto:guofeng2017@163.com" >驴友足迹</a> © 2016 Class:软工5班 Name:郭峰 ID:20142203788 Phone:15762796681 </div>
+    </div>
+    
+
+
+
+</body>
+</html>

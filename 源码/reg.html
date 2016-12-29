@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册驴友足迹账号</title>
+<link rel="stylesheet" type="text/css" href="css/share.css" />
+<script type="text/javascript" src="javascript/reg.js"></script>
+<script type="text/javascript" src="javascript/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="javascript/jquery.movebg.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".nav").movebg({
+			width:120/*滑块的大小*/,
+			extra:40/*额外反弹的距离*/,
+			speed:300/*滑块移动的速度*/,
+			rebound_speed:400/*滑块反弹的速度*/
+		});
+	})
+
+</script>
+<style type="text/css">
+	/*----------------reg---------------------*/
+	.reg{
+		height:600px;
+		width:960px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:80px;
+		margin-top:80px;
+		background:url(images/tBG.jpg);
+		border-radius:5px;
+
+	}
+	.reg2{
+		width:650px;
+		margin-right:auto;
+		margin-left:auto;
+		padding-top:30px;
+		font-size:25px;
+		font:"Times New Roman", Times, serif;
+		
+	}
+	.tishi{
+		font-size:15px;
+		font:"Times New Roman", Times, serif;
+	
+	}
+	input,select{
+			font-size:20px;
+			border:#000000 solid 1px;
+	}
+	.btn{
+		background:none;
+		font-size:25px;
+	}
+	.btn:hover{
+		border:groove 1px #FF0000;
+	}
+	
+</style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="listmenu"> 
+         	<div class="nav">
+                <ul>
+                    <li class="nav-item"><a href="index.html">首页</a></li>
+                    <li class="nav-item"><a href="Gallery.html">景廊</a></li>
+                    <li class="nav-item"><a href="Testimonials.html" >感悟</a></li>
+                    <li class="nav-item"><a href="https://www.baidu.com/">论坛</a></li> 
+                    <li class="nav-item"><a href="readme.html">关于我</a></li>
+                </ul>
+                <!--移动的滑动-->
+                <div class="move-bg"></div>
+                <!--移动的滑动 end-->
+        	</div>
+            
+            <div class="listbtn">
+  				<a href="reg.html"><input class="topbtn" type="button" value="注册" onclick="" /></a>
+  				<input class="topbtn" type="button" value="登录" onclick="" />
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <div class="title">
+    	<img class="logoimg" src="images/logo.png"/>
+        <input class="serchtxt" class="text" type="text" value="搜索..." />
+        <img class="serchimg" src="images/e.png" />
+    </div>
+    
+    
+    <div class="back">
+    	<div class="backs">
+        	<a class="backa" href="index.html">首页</a> / 注册为驴友
+        </div>
+    </div>
+    
+    <div class="bar">注册</div>
+    <hr class="barhr"/>
+    
+    
+    
+    
+    <div class="reg">
+ 		<div class="reg2">
+          <form class="from">
+              填用户名 <input id="userName"   type="text" onchange="userNamef()" />
+              <span id="GFuserName"></span>
+              <div class="tishi">请输入2~12位以内的中文、英文或数字</div>
+              <br />
+              
+              填写密码 <input id="pwd" type="password" onchange="pwdf()"/>
+              <span id="GFpwd"></span>
+              <div class="tishi">请输4~12位任意字符(非汉字)</div>
+              <br />
+              
+              确认密码 <input id="cheakpwd" type="password" onchange="cheakpwdf()" />
+              <span id="GFcheakpwd"></span>
+              <div class="tishi">请重新输入密码</div>
+              <br />
+              
+              选择性别 <input id="sex" name="sex"  value="男" type="radio" checked="checked"/>男
+                      <input id="sex" name="sex"   value="女"  type="radio" />女
+              <br /><br />
+              
+              填写邮箱 <input id="mail" type="email" onchange="mailf()"/>
+              <span id="GFmail"></span>
+              <div class="tishi">请输入邮箱地址,由英文和数字、下划线组成</div>
+              <br />
+              
+              填手机号 <input id="tel" type="text" onchange="telf()"/>
+              <span id="GFtel"></span>
+              <div class="tishi">请输入11位手机号</div>
+              <br />
+              
+              填写住址  
+              <select id="sheng" onChange="getCity()">
+                   <OPTION VALUE="0">请选择所在省份 </OPTION>
+                   <OPTION VALUE="山东">山东省 </OPTION>
+                   <OPTION VALUE="江苏">江苏省 </OPTION>
+                   <OPTION VALUE="浙江">浙江省 </OPTION>
+              </SELECT>
+           
+              <SELECT  id="shi" onChange="getqu()">
+                  <OPTION VALUE="0">请选择所在城市 </OPTION>
+              </SELECT>
+              
+              <select  id ="qu" >
+                    <option value="0">请选择所在区</option>	 
+              </select>
+              <br /><br />
+              
+              
+              <input class="btn" type="reset" value="重填" />
+              <input class="btn" type="button"  value="注册" onclick="zhucef()" />
+              <br /><br />
+      
+          </form>
+          </div>
+    </div>
+    
+  
+
+    
+    
+  
+     <div class="bottom">
+    	<div class="bottoms">邮箱：<a href="mailto:guofeng2017@163.com" >驴友足迹</a> © 2016 Class:软工5班 Name:郭峰 ID:20142203788 Phone:15762796681 </div>
+    </div>
+    
+
+
+
+</body>
+</html>

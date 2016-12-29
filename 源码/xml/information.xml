@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE 客户列表 [
+	<!ELEMENT 客户列表 (客户)*>
+	<!ELEMENT 客户 (ID,姓名,EMAIL+,电话,welcome)>
+	<!ELEMENT 姓名 (#PCDATA)>
+	<!ELEMENT ID  (#PCDATA)>
+	<!ELEMENT EMAIL (#PCDATA)>
+	<!ELEMENT 电话 (#PCDATA)>
+	<!ELEMENT welcome (#PCDATA)>
+]>
+<客户列表>
+	<客户>
+		<ID>10001</ID>
+		<姓名>郭峰</姓名>
+		<EMAIL>guofeng2017@163.com</EMAIL>
+		<电话>15762796681</电话>
+		<welcome>驴友足迹 （JavaScript读取XML）</welcome>		
+	</客户>
+	<客户>
+		<ID>10002</ID>
+		<姓名>郭峰2</姓名>
+		<EMAIL>guofeng2017@163.com 2</EMAIL>
+		<电话>15762796681 2</电话>
+		<welcome>驴友足迹 （JavaScript读取XML）</welcome>			
+	</客户>
+</客户列表>

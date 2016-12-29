@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>景廊</title>
+<link href="css/share.css" rel="stylesheet" type="text/css"  />
+<link href="css/GallerySmallImg.css" rel="stylesheet" type="text/css">
+<script src="javascript/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="javascript/GallerySmallImg.js"></script>
+<script type="text/javascript" src="javascript/jquery.movebg.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".nav").movebg({
+			width:120/*滑块的大小*/,
+			extra:40/*额外反弹的距离*/,
+			speed:300/*滑块移动的速度*/,
+			rebound_speed:400/*滑块反弹的速度*/
+		});
+	})
+
+</script>
+<style type="text/css">
+	.main{
+		margin-top:60px;
+		margin-left:auto;
+		margin-right:auto;
+		width: 860px;
+		
+		height: 460px;
+		border:#00BF00 1px dotted;
+		border-radius:10px;
+	}
+	.imgtag{
+		float: left;
+		width: 144px;
+		height: 90px;
+		position: relative;
+		margin-top:40px;
+		margin-left:55px;
+
+		
+
+	}
+	.tag_item{
+		width: 144px;
+		height: 90px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		overflow: hidden;
+	}
+	.curr{
+		z-index: 100;
+		box-shadow: 0 0 5px #000;
+		background: rgba(37, 37, 37, 0.65);
+		background: #666 9;
+	}
+	.curr img{
+		opacity: 1;
+		filter: alpha(opacity = 100);
+	}
+	.not_curr{
+		opacity: .5;
+		filter: alpha(opacity = 45);
+	}
+	.taglist{
+		height: 21px;
+		width: 46px;
+		overflow: hidden;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-radius: 0 11px 11px 0;
+		background: rgba(37,37,37,0.5);
+	}
+	.taglist .tags{
+		display: block;
+		list-style: none;
+		color: #f7f7f7;
+		font-size: 12px;
+		height: 21px;
+		width: 300px;
+	}
+	.tag{
+		display: block;
+		float: left;
+		height: 21px;
+		line-height: 21px;
+		text-align: left;
+		line-height: 22px	9;
+	}
+	.tag a {
+		color: #f7f7f7;
+		text-decoration: none;
+		display: block;
+		padding: 0 3px;
+	}
+	.tag1{
+		width: 65px;
+	}
+	.tag1 a {
+		padding: 0 10px 0 10px;
+		font-weight: bold;
+	}
+	.tag2 {
+		width: 42px;
+		text-align: center;
+	}
+	/*----------------lookmore---------------------*/
+	.lookmore{
+		font-size:25px;
+		font:"Times New Roman", Times, serif;
+		text-align:center;
+		margin-top:50px;
+		margin-bottom:100px;
+	}
+	.lookmore a{
+		color:#007F55;
+	}
+	.lookmore :hover{
+		color:#F05;
+	}
+	
+</style>
+
+</head>
+<body>
+<div class="list">
+        <div class="listmenu"> 
+         	<div class="nav">
+                <ul>
+                    <li class="nav-item"><a href="index.html">首页</a></li>
+                    <li class="nav-item  cur"><a href="#">景廊</a></li>
+                    <li class="nav-item"><a href="Testimonials.html" >感悟</a></li>
+                    <li class="nav-item"><a href="https://www.baidu.com/" >论坛</a></li> 
+                    <li class="nav-item"><a href="readme.html">关于我</a></li>
+                </ul>
+                <!--移动的滑动-->
+                <div class="move-bg"></div>
+                <!--移动的滑动 end-->
+        	</div>
+            
+            <div class="listbtn">
+  				<a href="reg.html"><input class="topbtn" type="button" value="注册" onclick="" /></a>
+  				<input class="topbtn" type="button" value="登录" onclick="" />
+            </div>
+            
+        </div>
+    </div>
+    
+    
+    <div class="title">
+    	<img class="logoimg" src="images/logo.png"/>
+        <input class="serchtxt" class="text" type="text" value="搜索..." />
+        <img class="serchimg" src="images/e.png" />
+    </div>
+    
+    
+    <div class="back">
+    	<div class="backs">
+        	<a class="backa" href="index.html">首页</a> / 景廊风情
+        </div>
+    </div>
+    
+    <div class="bar">景廊风情</div>
+    <hr class="barhr"/>
+    
+    
+    
+ <div class="main">
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (1).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">沙滩</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美女</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">大海</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">小清新</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (2).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">沙滩</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美女</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">大海</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">小清新</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (3).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">沙滩</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美女</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">大海</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">小清新</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (4).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">九寨沟</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">水景</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (5).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">九寨沟</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">雪景</a></li>
+				</ul>
+			</div>	
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (6).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">长江</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">河流</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (7).jpg">	
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">大峡谷</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">磅礴</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美国</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (8).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">大峡谷</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">探险</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美国</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">	
+				<img style="width:100%" src="images/g (9).jpg">	
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">张家界</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">中国</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">	
+			<img style="width:100%" src="images/g (10).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">老街</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">上海</a></li>
+				</ul>
+			</div>
+		</div>		
+	</div>
+    
+    <div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (11).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">上海</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">东方</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+	<div class="imgtag">
+		<div class="tag_item">
+			<img style="width:100%" src="images/g (12).jpg">
+			<div class="taglist" style="width: 46px;">
+				<ul class="tags">
+					<li class="tag tag1"><a href="javascript:void(0)">旅游</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">西湖</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">美景</a></li>
+					<li class="tag tag2"><a href="javascript:void(0)">中国</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+    
+    
+    
+  
+  
+  
+    
+    <div class="lookmore">
+    	<a href="#">查看更多 >></a>
+    </div>
+    
+    
+  
+   <div class="bottom">
+    	<div class="bottoms">邮箱：<a href="mailto:guofeng2017@163.com" >驴友足迹</a> © 2016 Class:软工5班 Name:郭峰 ID:20142203788 Phone:15762796681 </div>
+    </div>
+
+</body>
+</html>
