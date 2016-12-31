@@ -1,6 +1,13 @@
 # TourFootprint
 # 驴友足迹
 
+## TYPE：开源网页 Demo
+## HTML、DIV+CSS、JavaScript、jQuery、部分XML
+## Auther：郭峰
+## Email：iamguofeng@163.com
+## Address：山东省鲁东大学软件工程
+
+--
 特此说明:
 
 1. 此份代码是我于2016年大二下学期，为提交老师所布置的web基础大作业而编写的。
@@ -10,7 +17,7 @@
 5. 站点结构清晰，页面简洁，由于我对web并不是非常热爱，代码粗糙之处请多包涵。
 
 --
-主要包含以下页面：
+主要页面：
 
 1. 首页 index.html：图片轮播展示一周最佳美景、旅游达人所见所拍等
 2. 景廊页 Gallery.html： 利用缩放动画美腻的展示了高清美景
