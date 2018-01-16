@@ -1,18 +1,17 @@
-项目说明
-------
+Project Description
+-------
+* Theme：ShareTravel is a shared sense of what one sees and hears tourism as the theme of the pure hand static page code.
+* Technology：The structure of the code is clear, the style of the page is concise, Html, Div+Css, JavaScript, jQuery, XML.
+* Support：If you have a problem or find an application error, you can submit a question here or contact me by mail. If you think this application is good, I hope you will give a "Star" to the project.
 
-* 主题：驴友足迹是一个分享旅游时所见所闻所感为主题的纯静态练手网页代码
-* 知识：代码结构清晰，页面风格简洁，运用Html、Div+Css、JavaScript、jQuery、XML 等知识点
-* 支持：如果觉得还不错，点个 Star 就是给我开源代码最大的支持 O(∩_∩)O...
-
-联系方式
-------
-* 作者：郭峰
-* 邮箱: iamguofeng@163.com 
+Contact Information
+-------
+* Author: 郭峰
+* Email: iamguofeng@163.com 
 * CSDN: http://blog.csdn.net/plain_maple
 
-预览截图
-------
+Application Screenshot
+-------
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/首页 (1).jpg"  />
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/首页 (2).png"  />
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/景廊.png"  />
