@@ -12,6 +12,7 @@ Contact Information
 
 Application Screenshot
 -------
+
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/首页 (1).jpg"  />
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/首页 (2).png"  />
 <img src="https://github.com/iamguofeng/TourFootprint/raw/master/截图/景廊.png"  />
